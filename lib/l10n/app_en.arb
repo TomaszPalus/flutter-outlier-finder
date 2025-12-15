@@ -1,0 +1,13 @@
+{
+  "@@locale": "en",
+
+  "title": "Outlier Finder",
+  "search": "Search",
+  "inputLabel": "Numbers",
+  "inputHint": "e.g. 2,4,0,100,4,11,2602,36",
+
+  "invalidFormat": "Invalid input format",
+  "tooFewNumbers": "Please enter at least 3 numbers",
+  "outlierNotFound": "Outlier value not found",
+  "unknownError": "Something went wrong"
+}

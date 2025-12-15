@@ -1,7 +1,7 @@
 class OutlierFinder {
   int findOutlier(List<int> numbers) {
     if (numbers.length < 3) {
-      throw ArgumentError('Lista musi zawierać co najmniej 3 elementy.');
+      throw TooFewNumbersException();
     }
 
     final firstThree = numbers.take(3);
@@ -10,7 +10,11 @@ class OutlierFinder {
 
     return numbers.firstWhere(
       (n) => majorityIsEven ? n.isOdd : n.isEven,
-      orElse: () => throw StateError('Nie znaleziono wartości odstającej.'),
+      orElse: () => throw OutlierNotFoundException(),
     );
   }
 }
+
+class TooFewNumbersException implements Exception {}
+
+class OutlierNotFoundException implements Exception {}

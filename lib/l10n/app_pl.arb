@@ -1,0 +1,13 @@
+{
+  "@@locale": "pl",
+
+  "title": "Wyszukiwanie wartości odstającej",
+  "search": "Wyszukaj",
+  "inputLabel": "Liczby",
+  "inputHint": "np. 2,4,0,100,4,11,2602,36",
+
+  "invalidFormat": "Nieprawidłowy format danych",
+  "tooFewNumbers": "Podaj co najmniej 3 liczby",
+  "outlierNotFound": "Nie znaleziono wartości odstającej",
+  "unknownError": "Coś poszło nie tak"
+}
